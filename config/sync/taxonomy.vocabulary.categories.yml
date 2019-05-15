@@ -1,0 +1,8 @@
+uuid: ccb150fd-4713-4d84-b905-8c84767e2e87
+langcode: en
+status: true
+dependencies: {  }
+name: Categories
+vid: categories
+description: 'Related to post'
+weight: 0
