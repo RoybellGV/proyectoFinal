@@ -5,13 +5,11 @@ dependencies:
   config:
     - field.field.node.blog.body
     - field.field.node.blog.field_categories
-    - field.field.node.blog.field_image
+    - field.field.node.blog.field_imagef
     - field.field.node.blog.field_keyword
     - field.field.node.blog.field_link
-    - image.style.thumbnail
     - node.type.blog
   module:
-    - image
     - link
     - metatag
     - path
@@ -45,13 +43,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_image:
-    weight: 122
+  field_imagef:
+    weight: 126
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: image_image
+    type: entity_reference_autocomplete
     region: content
   field_keyword:
     weight: 123
