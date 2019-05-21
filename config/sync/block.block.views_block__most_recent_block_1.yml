@@ -12,7 +12,7 @@ dependencies:
 id: views_block__most_recent_block_1
 theme: bartik
 region: sidebar_first
-weight: -6
+weight: -7
 provider: null
 plugin: 'views_block:most_recent-block_1'
 settings:
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /posts
+    pages: "/posts\r\n/taxonomy/term/1\r\n/taxonomy/term/2\r\n/taxonomy/term/3\r\n/taxonomy/term/4"
     negate: false
     context_mapping: {  }

@@ -1,0 +1,35 @@
+uuid: 1e62d781-ac72-4caa-bb75-b04be011ee06
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.users
+  module:
+    - user
+    - views
+  theme:
+    - bartik
+id: views_block__users_block_1
+theme: bartik
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'views_block:users-block_1'
+settings:
+  id: 'views_block:users-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
