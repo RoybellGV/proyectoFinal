@@ -1,0 +1,58 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/proyectofinal.ddev.local\/admin\/config\/user-interface\/shortcut\/link\/3?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/shortcut\/default"
+        }
+    },
+    "id": [
+        {
+            "value": 3
+        }
+    ],
+    "uuid": [
+        {
+            "value": "5d4208b5-43d5-46be-ae40-7cbffd9b0ce1"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "shortcut_set": [
+        {
+            "target_id": "default"
+        }
+    ],
+    "title": [
+        {
+            "value": "Manage fields",
+            "lang": "en"
+        }
+    ],
+    "link": [
+        {
+            "uri": "internal:\/admin\/structure\/types\/manage\/blog\/fields",
+            "title": null,
+            "options": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "| Drupaleros Blogeros",
+                "canonical_url": "http:\/\/proyectofinal.ddev.local\/node"
+            }
+        }
+    ]
+}

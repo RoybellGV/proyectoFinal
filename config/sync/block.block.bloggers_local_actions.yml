@@ -1,0 +1,20 @@
+uuid: 27f1317d-bb93-4b85-ab77-53d5c96798e4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bloggers
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: bloggers_local_actions
+theme: bloggers
+region: header
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

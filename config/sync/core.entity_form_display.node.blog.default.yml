@@ -5,13 +5,14 @@ dependencies:
   config:
     - field.field.node.blog.body
     - field.field.node.blog.field_categories
+    - field.field.node.blog.field_comments
     - field.field.node.blog.field_imagef
-    - field.field.node.blog.field_keyword
+    - field.field.node.blog.field_keywords
     - field.field.node.blog.field_link
     - node.type.blog
   module:
+    - comment
     - link
-    - metatag
     - path
     - text
 id: node.blog.default
@@ -43,6 +44,12 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_comments:
+    weight: 127
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
+    region: content
   field_imagef:
     weight: 126
     settings:
@@ -52,11 +59,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_keyword:
-    weight: 123
-    settings: {  }
+  field_keywords:
+    weight: 128
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: metatag_firehose
+    type: entity_reference_autocomplete
     region: content
   field_link:
     weight: 124

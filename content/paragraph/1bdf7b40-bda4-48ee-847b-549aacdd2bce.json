@@ -1,0 +1,127 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/psimple"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/psimple\/field_categories": [
+            {
+                "href": "http:\/\/proyectofinal.ddev.local\/taxonomy\/term\/4?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/psimple\/field_image": [
+            {
+                "href": "http:\/\/proyectofinal.ddev.local\/causa-erat-iustum-natu.?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 12
+        }
+    ],
+    "uuid": [
+        {
+            "value": "1bdf7b40-bda4-48ee-847b-549aacdd2bce"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 12
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "psimple"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-06-14T21:56:06+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "14"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "paragraph"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "field_left"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/psimple\/field_categories": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/proyectofinal.ddev.local\/taxonomy\/term\/4?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/categories"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "774b1142-e68b-4a2f-9a1d-1f555dd6f680"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/paragraph\/psimple\/field_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/proyectofinal.ddev.local\/causa-erat-iustum-natu.?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0fa98a41-3847-4c91-919d-df755aba93d3"
+                    }
+                ]
+            }
+        ]
+    }
+}

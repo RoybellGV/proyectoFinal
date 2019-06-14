@@ -6,8 +6,9 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.blog.body
     - field.field.node.blog.field_categories
+    - field.field.node.blog.field_comments
     - field.field.node.blog.field_imagef
-    - field.field.node.blog.field_keyword
+    - field.field.node.blog.field_keywords
     - field.field.node.blog.field_link
     - node.type.blog
   module:
@@ -20,17 +21,17 @@ mode: teaser
 content:
   body:
     type: text_trimmed
-    weight: 3
+    weight: 2
     region: content
-    label: above
+    label: hidden
     settings:
-      trim_length: 150
+      trim_length: 50
     third_party_settings: {  }
   field_categories:
     type: entity_reference_label
     weight: 1
     region: content
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -38,16 +39,13 @@ content:
     type: entity_reference_entity_view
     weight: 0
     region: content
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
-  links:
-    weight: 2
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
-  field_keyword: true
+  field_comments: true
+  field_keywords: true
   field_link: true
+  links: true

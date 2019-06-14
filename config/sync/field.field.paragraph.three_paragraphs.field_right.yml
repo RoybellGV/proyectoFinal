@@ -1,0 +1,34 @@
+uuid: 02a9f692-387a-4ff5-807c-05be70c1653d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_right
+    - paragraphs.paragraphs_type.psimple
+    - paragraphs.paragraphs_type.three_paragraphs
+  module:
+    - entity_reference_revisions
+id: paragraph.three_paragraphs.field_right
+field_name: field_right
+entity_type: paragraph
+bundle: three_paragraphs
+label: RIght
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      psimple: psimple
+    target_bundles_drag_drop:
+      three_paragraphs:
+        weight: 3
+        enabled: false
+      psimple:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

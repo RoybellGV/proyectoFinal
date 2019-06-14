@@ -1,0 +1,34 @@
+uuid: c43b0139-f870-4b2f-9c02-caa7a0e7e684
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_center
+    - paragraphs.paragraphs_type.psimple
+    - paragraphs.paragraphs_type.three_paragraphs
+  module:
+    - entity_reference_revisions
+id: paragraph.three_paragraphs.field_center
+field_name: field_center
+entity_type: paragraph
+bundle: three_paragraphs
+label: Center
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      psimple: psimple
+    target_bundles_drag_drop:
+      three_paragraphs:
+        weight: 3
+        enabled: false
+      psimple:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

@@ -1,0 +1,22 @@
+uuid: 021ae172-2e4f-4675-9cc0-385e1c57ba81
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bloggers
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: bloggers_local_tasks
+theme: bloggers
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

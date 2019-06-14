@@ -1,0 +1,22 @@
+uuid: 85390899-afaf-4abe-a364-631304b7173a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bloggers
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: bloggers_content
+theme: bloggers
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

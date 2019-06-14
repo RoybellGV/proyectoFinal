@@ -1,0 +1,30 @@
+uuid: 06c4ba4f-ec18-42f9-b70f-e90333161b44
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recent_posts
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__recent_posts_block_1
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:recent_posts-block_1'
+settings:
+  id: 'views_block:recent_posts-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /posts
+    negate: false
+    context_mapping: {  }

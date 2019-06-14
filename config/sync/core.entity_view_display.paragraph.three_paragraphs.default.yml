@@ -1,0 +1,44 @@
+uuid: 0100e9b0-d1f8-4594-824c-bd35a636c05c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.three_paragraphs.field_center
+    - field.field.paragraph.three_paragraphs.field_left
+    - field.field.paragraph.three_paragraphs.field_right
+    - paragraphs.paragraphs_type.three_paragraphs
+  module:
+    - entity_reference_revisions
+id: paragraph.three_paragraphs.default
+targetEntityType: paragraph
+bundle: three_paragraphs
+mode: default
+content:
+  field_center:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_left:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_right:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,179 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/proyectofinal.ddev.local\/node\/140?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/post3"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/post3\/revision_uid": [
+            {
+                "href": "http:\/\/proyectofinal.ddev.local\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/post3\/uid": [
+            {
+                "href": "http:\/\/proyectofinal.ddev.local\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/post3\/field_funciona": [
+            {
+                "href": ""
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 140
+        }
+    ],
+    "uuid": [
+        {
+            "value": "99e696e4-8ede-4a1a-83f1-345b6cd13f11"
+        }
+    ],
+    "vid": [
+        {
+            "value": 142
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "post3"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2019-06-14T21:56:36+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/post3\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/proyectofinal.ddev.local\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "72e0397b-8e0d-4ea2-b088-a51a5b56f416"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/post3\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/proyectofinal.ddev.local\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "72e0397b-8e0d-4ea2-b088-a51a5b56f416"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/post3\/field_funciona": [
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/three_paragraphs"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "3899e4f2-d6d1-4e66-a3f0-cefe93838059"
+                    }
+                ],
+                "target_revision_id": "14"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Prueba nueva",
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-06-14T21:55:41+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-06-14T21:56:36+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Prueba nueva | Drupaleros Blogeros",
+                "canonical_url": "http:\/\/proyectofinal.ddev.local\/node\/140"
+            }
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ]
+}

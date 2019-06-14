@@ -1,0 +1,30 @@
+uuid: 44c3f373-eae7-4d39-a2a5-9370bcd5b9e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.most_recent
+  module:
+    - system
+    - views
+  theme:
+    - radix
+id: radix_views_block__most_recent_block_1
+theme: radix
+region: navbar_branding
+weight: -7
+provider: null
+plugin: 'views_block:most_recent-block_1'
+settings:
+  id: 'views_block:most_recent-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/posts\r\n/taxonomy/term/1\r\n/taxonomy/term/2\r\n/taxonomy/term/3\r\n/taxonomy/term/4"
+    negate: false
+    context_mapping: {  }

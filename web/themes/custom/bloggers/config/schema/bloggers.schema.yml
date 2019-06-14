@@ -1,0 +1,5 @@
+# Schema for the configuration files of the bloggers theme.
+
+bloggers.settings:
+  type: theme_settings
+  label: 'bloggers settings'

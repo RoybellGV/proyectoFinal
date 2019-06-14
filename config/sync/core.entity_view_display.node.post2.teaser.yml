@@ -1,0 +1,22 @@
+uuid: 6a78b8f2-3f82-49c6-8d9a-5ad1c98440a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.post2.field_lagana
+    - node.type.post2
+  module:
+    - user
+id: node.post2.teaser
+targetEntityType: node
+bundle: post2
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_lagana: true

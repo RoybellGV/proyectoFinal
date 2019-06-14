@@ -1,0 +1,32 @@
+uuid: 5b38fbd4-41bf-4d84-a730-309939bb95be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_funciona
+    - node.type.post3
+  module:
+    - entity_reference_revisions
+id: node.post3.field_funciona
+field_name: field_funciona
+entity_type: node
+bundle: post3
+label: Funciona
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      psimple:
+        weight: 3
+        enabled: false
+      three_paragraphs:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

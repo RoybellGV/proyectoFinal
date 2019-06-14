@@ -1,0 +1,30 @@
+uuid: 889f1569-25ac-4b18-b414-cdf7f70ec830
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.categories
+  module:
+    - system
+    - views
+  theme:
+    - bloggers
+id: bloggers_views_block__categories_block_1
+theme: bloggers
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:categories-block_1'
+settings:
+  id: 'views_block:categories-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /posts
+    negate: false
+    context_mapping: {  }

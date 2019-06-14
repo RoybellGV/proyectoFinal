@@ -1,0 +1,87 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/proyectofinal.ddev.local\/sites\/default\/files\/pictures\/2019-06\/b7166825cd5824f6eec982d086e08eb7-police-car-round-icon-by-vexels.png"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/proyectofinal.ddev.local\/user\/0?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 43
+        }
+    ],
+    "uuid": [
+        {
+            "value": "e5ee29c8-f92f-4b12-bc5e-0ff66769f610"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/proyectofinal.ddev.local\/user\/0?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "453dec0b-7fab-4686-987b-711c1ae6fb2b"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "b7166825cd5824f6eec982d086e08eb7-police-car-round-icon-by-vexels.png"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/pictures\/2019-06\/b7166825cd5824f6eec982d086e08eb7-police-car-round-icon-by-vexels.png",
+            "url": "\/sites\/default\/files\/pictures\/2019-06\/b7166825cd5824f6eec982d086e08eb7-police-car-round-icon-by-vexels.png"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/png"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 8673
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-06-09T23:43:20+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-06-09T23:43:33+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

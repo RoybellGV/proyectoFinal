@@ -1,0 +1,22 @@
+uuid: 968c7958-5acf-4898-bbe4-618a63e3b028
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bloggers
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: bloggers_breadcrumbs
+theme: bloggers
+region: header
+weight: -7
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

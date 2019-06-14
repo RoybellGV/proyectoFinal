@@ -1,0 +1,9 @@
+uuid: 9f3b908a-b9e9-4134-b936-6cc201a8bfa6
+langcode: en
+status: true
+dependencies: {  }
+id: three_paragraphs
+label: 'Three paragraphs'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,30 @@
+uuid: 80b02851-c2cf-450d-9ca2-d567e8e50b00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.post2.field_lagana
+    - node.type.post2
+  module:
+    - entity_reference_revisions
+    - user
+id: node.post2.default
+targetEntityType: node
+bundle: post2
+mode: default
+content:
+  field_lagana:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

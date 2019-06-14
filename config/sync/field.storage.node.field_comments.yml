@@ -1,16 +1,17 @@
-uuid: 36a43946-fb0c-4b06-b92e-ef957d7438ec
+uuid: 561e8d44-8a30-40be-ae49-b4251faff88a
 langcode: en
 status: true
 dependencies:
   module:
-    - metatag
+    - comment
     - node
-id: node.field_keyword
-field_name: field_keyword
+id: node.field_comments
+field_name: field_comments
 entity_type: node
-type: metatag
-settings: {  }
-module: metatag
+type: comment
+settings:
+  comment_type: comment
+module: comment
 locked: false
 cardinality: 1
 translatable: true

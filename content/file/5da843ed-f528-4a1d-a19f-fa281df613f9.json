@@ -1,0 +1,87 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/proyectofinal.ddev.local\/sites\/default\/files\/pictures\/2019-05\/child-1837375_960_720.png"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/proyectofinal.ddev.local\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 21
+        }
+    ],
+    "uuid": [
+        {
+            "value": "5da843ed-f528-4a1d-a19f-fa281df613f9"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/proyectofinal.ddev.local\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "72e0397b-8e0d-4ea2-b088-a51a5b56f416"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "child-1837375_960_720.png"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/pictures\/2019-05\/child-1837375_960_720.png",
+            "url": "\/sites\/default\/files\/pictures\/2019-05\/child-1837375_960_720.png"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/png"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 68346
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-05-21T02:36:56+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-05-21T02:37:00+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

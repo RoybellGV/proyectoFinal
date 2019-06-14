@@ -1,0 +1,18 @@
+uuid: d774ec95-984e-48e4-a212-df5edb8183f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Post3
+type: post3
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

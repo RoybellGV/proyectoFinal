@@ -1,0 +1,30 @@
+uuid: d3d303fa-eb92-48ab-a370-c5b735653a1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.categories
+  module:
+    - system
+    - views
+  theme:
+    - radix
+id: radix_views_block__categories_block_1
+theme: radix
+region: navbar_branding
+weight: -5
+provider: null
+plugin: 'views_block:categories-block_1'
+settings:
+  id: 'views_block:categories-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /posts
+    negate: false
+    context_mapping: {  }

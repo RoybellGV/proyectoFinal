@@ -1,0 +1,22 @@
+uuid: 8c1c0936-f92e-4c69-bc35-def480a7a896
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bloggers
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: bloggers_messages
+theme: bloggers
+region: header
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

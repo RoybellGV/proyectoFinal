@@ -1,0 +1,35 @@
+uuid: 9f69836e-7d9e-470a-aaf0-188c85fbe2a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.users
+  module:
+    - user
+    - views
+  theme:
+    - radix
+id: radix_views_block__users_block_1
+theme: radix
+region: navbar_branding
+weight: -6
+provider: null
+plugin: 'views_block:users-block_1'
+settings:
+  id: 'views_block:users-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

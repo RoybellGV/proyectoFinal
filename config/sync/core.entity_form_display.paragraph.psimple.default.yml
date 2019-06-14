@@ -1,0 +1,34 @@
+uuid: 9158799d-cdf2-4bd2-8cab-a192f6627225
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.psimple.field_categories
+    - field.field.paragraph.psimple.field_image
+    - paragraphs.paragraphs_type.psimple
+id: paragraph.psimple.default
+targetEntityType: paragraph
+bundle: psimple
+mode: default
+content:
+  field_categories:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_image:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

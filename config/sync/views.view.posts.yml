@@ -296,6 +296,7 @@ display:
         type: normal
         title: Posts
         menu_name: main
+        weight: -49
     cache_metadata:
       max-age: -1
       contexts:

@@ -1,0 +1,39 @@
+uuid: 7d4e04d9-c25b-4979-8c1b-4faac2388320
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.post3.body
+    - field.field.node.post3.field_funciona
+    - node.type.post3
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.post3.default
+targetEntityType: node
+bundle: post3
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_funciona:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
