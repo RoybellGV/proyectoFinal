@@ -1,3 +1,17 @@
+
+# After cloning/forking this project you should do the following:
+
+    Initiate containers:
+        ddev start
+    Install dependencies:
+        ddev composer install
+    Install site using existing config:
+        ddev exec drush si --db-url=mysql://db:db@db/db --config-dir=../config/sync
+    Import config
+        ddev exec drush cim -y
+    Import default content:
+        ddev exec drush dcdi
+
 # Composer template for Drupal projects
 
 [![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=8.x)](https://travis-ci.org/drupal-composer/drupal-project)
@@ -143,3 +157,5 @@ To prevent this you can add this code to specify the PHP version you want to use
     }
 },
 ```
+
+
