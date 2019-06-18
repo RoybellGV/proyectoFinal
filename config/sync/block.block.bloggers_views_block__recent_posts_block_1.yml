@@ -1,6 +1,6 @@
 uuid: 6509b6d8-5a8f-414d-bedb-2a6c484848e1
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.recent_posts

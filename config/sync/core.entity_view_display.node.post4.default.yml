@@ -1,0 +1,28 @@
+uuid: 39e672b0-2fb7-454b-b2f7-c5770a892a70
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.post4.body
+    - node.type.post4
+  module:
+    - text
+    - user
+id: node.post4.default
+targetEntityType: node
+bundle: post4
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

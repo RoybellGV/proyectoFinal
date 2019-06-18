@@ -1,16 +1,15 @@
-uuid: 144f8c06-fdcb-4571-a5ef-592b6162143a
+uuid: 20c06f74-0520-4384-bdd1-61cbebc3519e
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - node.type.blog
-    - system.menu.main
+    - node.type.post4
   module:
     - node
     - user
-id: posts
-label: Posts
+id: grid
+label: Grid
 module: views
 description: ''
 tag: ''
@@ -68,16 +67,7 @@ display:
             previous: ‹‹
             next: ››
       style:
-        type: grid
-        options:
-          uses_fields: false
-          columns: 3
-          automatic_width: true
-          alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
-          row_class_default: true
-          row_class_custom: ''
+        type: default
       row:
         type: 'entity:node'
         options:
@@ -147,7 +137,7 @@ display:
           table: node_field_data
           field: type
           value:
-            blog: blog
+            post4: post4
           entity_type: node
           entity_field: type
           plugin_id: bundle
@@ -167,123 +157,12 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Posts
+      title: Grid
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
-      display_extenders: {  }
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url.query_args
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
-  block_1:
-    display_plugin: block
-    id: block_1
-    display_title: Block
-    position: 2
-    display_options:
-      display_extenders: {  }
-      style:
-        type: default
-      defaults:
-        style: false
-        row: false
-        pager: false
-        fields: false
-      row:
-        type: fields
-      pager:
-        type: full
-        options:
-          items_per_page: 3
-          offset: 0
-          id: 0
-          total_pages: null
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-          quantity: 9
-      fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          settings:
-            link_to_entity: true
-          plugin_id: field
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -300,12 +179,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: posts
-      menu:
-        type: normal
-        title: Posts
-        menu_name: main
-        weight: -49
+      path: grid
     cache_metadata:
       max-age: -1
       contexts:
