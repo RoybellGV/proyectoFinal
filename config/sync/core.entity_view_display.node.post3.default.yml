@@ -8,8 +8,137 @@ dependencies:
     - node.type.post3
   module:
     - entity_reference_revisions
+    - layout_builder
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          ec04eb73-d79d-4067-b6a2-a5bef155420c:
+            uuid: ec04eb73-d79d-4067-b6a2-a5bef155420c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:post3:links'
+            additional: {  }
+            weight: 0
+          a03f690c-caf6-416d-a9a2-cc60ed5cf883:
+            uuid: a03f690c-caf6-416d-a9a2-cc60ed5cf883
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:post3:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          390c6e1d-b276-4604-a094-8ae0b9b94422:
+            uuid: 390c6e1d-b276-4604-a094-8ae0b9b94422
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:post3:field_funciona'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          a208e785-b13b-4548-861b-2cb68cde3098:
+            uuid: a208e785-b13b-4548-861b-2cb68cde3098
+            region: content
+            configuration:
+              id: 'field_block:node:post3:type'
+              label: 'Content type'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 3
+        third_party_settings: {  }
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          column_widths: 33-34-33
+        components:
+          d185d392-5255-4771-80c5-b5059a4b5f72:
+            uuid: d185d392-5255-4771-80c5-b5059a4b5f72
+            region: first
+            configuration:
+              id: 'field_block:node:post3:body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          7fae2e5a-2e62-435e-b0a7-705694cc4f0f:
+            uuid: 7fae2e5a-2e62-435e-b0a7-705694cc4f0f
+            region: second
+            configuration:
+              id: 'field_block:node:post3:body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          e31188f3-f410-4cea-9253-af2c5695cf40:
+            uuid: e31188f3-f410-4cea-9253-af2c5695cf40
+            region: third
+            configuration:
+              id: 'field_block:node:post3:body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
 id: node.post3.default
 targetEntityType: node
 bundle: post3

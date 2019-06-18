@@ -1,0 +1,32 @@
+uuid: 183003d4-c02d-4641-8e65-fa133f57298c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.list_post_all
+  module:
+    - node
+    - views
+  theme:
+    - bloggers
+id: views_block__list_post_all_block_1
+theme: bloggers
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:list_post_all-block_1'
+settings:
+  id: 'views_block:list_post_all-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      blog: blog
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -13,9 +13,14 @@ dependencies:
     - node.type.blog
   module:
     - comment
+    - layout_builder
     - link
     - text
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
 id: node.blog.default
 targetEntityType: node
 bundle: blog

@@ -29,11 +29,13 @@ module:
   help: 0
   history: 0
   image: 0
+  layout_builder: 0
+  layout_discovery: 0
   link: 0
-  minimal: 0
   media: 0
   menu_ui: 0
   metatag: 0
+  minimal: 0
   node: 0
   options: 0
   page_cache: 0
