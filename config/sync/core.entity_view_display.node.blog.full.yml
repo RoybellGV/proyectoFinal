@@ -14,9 +14,179 @@ dependencies:
     - node.type.blog
   module:
     - comment
+    - layout_builder
+    - layout_discovery
     - link
     - text
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          column_widths: 50-50
+        components:
+          3db0cabc-f55e-4a24-8a64-5ae789210700:
+            uuid: 3db0cabc-f55e-4a24-8a64-5ae789210700
+            region: second
+            configuration:
+              id: 'field_block:node:blog:field_imagef'
+              label: ImageF
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: media_thumbnail
+                settings:
+                  image_style: large
+                  image_link: content
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          4db0553e-2744-4652-90e3-e8fcc42f2547:
+            uuid: 4db0553e-2744-4652-90e3-e8fcc42f2547
+            region: first
+            configuration:
+              id: 'field_block:node:blog:uid'
+              label: 'Authored by'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          de3f7b96-3d98-4c96-b409-5f5dfc417b71:
+            uuid: de3f7b96-3d98-4c96-b409-5f5dfc417b71
+            region: first
+            configuration:
+              id: 'field_block:node:blog:created'
+              label: 'Authored on'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: timestamp
+                settings:
+                  date_format: medium
+                  custom_date_format: ''
+                  timezone: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          876911ed-f86a-4f45-872f-fb46de0a9487:
+            uuid: 876911ed-f86a-4f45-872f-fb46de0a9487
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:blog:links'
+            additional: {  }
+            weight: 0
+          50f5e70a-7b59-487d-a772-143243e82d71:
+            uuid: 50f5e70a-7b59-487d-a772-143243e82d71
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:blog:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          70bc5fba-ed47-43b0-bd01-320f05362e62:
+            uuid: 70bc5fba-ed47-43b0-bd01-320f05362e62
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:blog:field_link'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 2
+          7c5a55d4-dcdf-4927-ae66-6112288d90b1:
+            uuid: 7c5a55d4-dcdf-4927-ae66-6112288d90b1
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:blog:field_categories'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 3
+          149a024e-d1d3-4fe6-8eed-8fd5b743fe53:
+            uuid: 149a024e-d1d3-4fe6-8eed-8fd5b743fe53
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:blog:field_imagef'
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 4
+          f5b3ff66-504b-40e5-955a-a3bdd374f548:
+            uuid: f5b3ff66-504b-40e5-955a-a3bdd374f548
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:blog:field_comments'
+              formatter:
+                type: comment_default
+                label: above
+                settings:
+                  view_mode: default
+                  pager_id: 0
+                third_party_settings: {  }
+            additional: {  }
+            weight: 5
+        third_party_settings: {  }
 id: node.blog.full
 targetEntityType: node
 bundle: blog

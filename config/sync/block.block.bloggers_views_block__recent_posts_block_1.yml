@@ -1,6 +1,6 @@
 uuid: 6509b6d8-5a8f-414d-bedb-2a6c484848e1
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.recent_posts
@@ -12,7 +12,7 @@ dependencies:
 id: bloggers_views_block__recent_posts_block_1
 theme: bloggers
 region: content
-weight: -6
+weight: -8
 provider: null
 plugin: 'views_block:recent_posts-block_1'
 settings:
