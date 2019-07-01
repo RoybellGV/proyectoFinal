@@ -53,3 +53,4 @@ hidden:
   field_comments: true
   field_keywords: true
   field_link: true
+  langcode: true

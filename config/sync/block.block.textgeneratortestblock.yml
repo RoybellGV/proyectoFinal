@@ -1,0 +1,37 @@
+uuid: a3b765be-d13d-4a4e-840b-be7927b2ab36
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - text_generator
+    - user
+  theme:
+    - bloggers
+id: textgeneratortestblock
+theme: bloggers
+region: header
+weight: 0
+provider: null
+plugin: text_generator_test_block
+settings:
+  id: text_generator_test_block
+  label: Location
+  provider: text_generator
+  label_display: visible
+  text_generator_test_block_settings: null
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: /about-us
+    negate: false
+    context_mapping: {  }

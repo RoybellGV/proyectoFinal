@@ -1,0 +1,43 @@
+<?php
+
+/*
+.*@file
+.*Module file for text_generator.
+.*/
+
+use  \Drupal\Core\Routing\RouteMatchInterface;
+
+/*
+.*Implements hook_help().
+.*/
+
+function text_generator_help($route_name, RouteMatchInterface $route_match) {
+    switch ($route_name) {
+        case 'help.page.text_generator':
+          return t('
+          <h1>Yahoo Weather API Documentation</h1>
+          The Weather RSS feed enables you to get up-to-date weather information for your location. You can save this feed in My Yahoo! or your favorite feed aggregator, or incorporate the RSS data into your own web site or client application. The Weather RSS feed is a dynamically-generated feed based on location, latitude & longitude or woeid. For more information please enter to this link: <a href="https://developer.yahoo.com/weather/documentation.html?guccounter=1#oauth-javascript">Wheather Api Documentation</a>
+          <h1>Help</h1>
+          To answer your questions, please contact us at <a href="drupalerosblogeros@outlook.es">Our e-mail</a>
+          ');
+    }
+
+}
+
+
+/*
+.*
+.*implements hook theme
+.*/
+
+function text_generator_theme($existing, $type, $theme, $path){
+  $variables= [
+    'text_generated' => [
+        'variables' => [
+            'text' => [],
+        ],
+        'template' => 'text_generated',
+    ],
+  ];
+  return $variables;
+}

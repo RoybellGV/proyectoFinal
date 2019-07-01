@@ -1,0 +1,11 @@
+text_generator:
+  version: VERSION
+  js:
+    js/text_generator.js: {}
+    https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js: { type: external, minified: true }
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings

@@ -10,6 +10,7 @@ module:
   comment: 0
   components: 0
   config: 0
+  config_translation: 0
   contact: 0
   contextual: 0
   datetime: 0
@@ -29,9 +30,11 @@ module:
   help: 0
   history: 0
   image: 0
+  language: 0
   layout_builder: 0
   layout_discovery: 0
   link: 0
+  locale: 0
   media: 0
   menu_ui: 0
   metatag: 0
@@ -47,6 +50,7 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  text_generator: 0
   token: 0
   toolbar: 0
   tour: 0
@@ -54,6 +58,7 @@ module:
   user: 0
   views_ui: 0
   menu_link_content: 1
+  content_translation: 10
   views: 10
   paragraphs: 11
   standard: 1000

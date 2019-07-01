@@ -1,0 +1,5 @@
+name: Module Custom
+type: module
+description: This module show information about api and show it.
+package: Custom
+core: 8.x

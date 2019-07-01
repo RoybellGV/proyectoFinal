@@ -1,0 +1,18 @@
+uuid: 296ea418-566e-4ba2-8e06-a8fbbf840c15
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.three_paragraphs
+id: paragraph.three_paragraphs.created
+field_name: created
+entity_type: paragraph
+bundle: three_paragraphs
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

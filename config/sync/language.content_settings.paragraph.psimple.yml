@@ -1,0 +1,18 @@
+uuid: e9ac1d4c-d59b-40f2-aebd-ecf6c3883ace
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.psimple
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.psimple
+target_entity_type_id: paragraph
+target_bundle: psimple
+default_langcode: site_default
+language_alterable: false

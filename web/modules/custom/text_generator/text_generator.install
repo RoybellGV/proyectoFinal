@@ -1,0 +1,19 @@
+<?php
+
+/*
+.*@file ACA SE HACE LO s permisos para instalar el modulo con cualquier usuario
+.*Installation functions fot text generator
+.*/
+use Drupal\user\RoleInterface;
+
+/*
+.*implements hook_install()
+.*
+.*/
+
+
+function text_generator_install() {
+  user_role_change_permissions(RoleInterface::ANONYMOUS_ID,[
+    'generate dummy text' => TRUE,
+  ]);
+}

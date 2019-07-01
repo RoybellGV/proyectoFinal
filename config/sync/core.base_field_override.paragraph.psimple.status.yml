@@ -1,0 +1,22 @@
+uuid: 1ff423af-43bc-4ad0-90da-3909f9c570c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.psimple
+id: paragraph.psimple.status
+field_name: status
+entity_type: paragraph
+bundle: psimple
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

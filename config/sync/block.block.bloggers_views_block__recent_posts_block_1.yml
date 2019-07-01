@@ -12,7 +12,7 @@ dependencies:
 id: bloggers_views_block__recent_posts_block_1
 theme: bloggers
 region: content
-weight: -8
+weight: -9
 provider: null
 plugin: 'views_block:recent_posts-block_1'
 settings:

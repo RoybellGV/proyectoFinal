@@ -1,0 +1,21 @@
+uuid: 88100103-7eac-4119-94b0-d6ae34cec4fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - text_generator
+  theme:
+    - bartik
+id: yourlocation
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: text_generator_test_block
+settings:
+  id: text_generator_test_block
+  label: 'Your location'
+  provider: text_generator
+  label_display: visible
+  text_generator_test_block_settings: null
+visibility: {  }

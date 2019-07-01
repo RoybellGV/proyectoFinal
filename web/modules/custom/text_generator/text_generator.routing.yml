@@ -1,0 +1,14 @@
+text_generator.generate:
+  path: '/text_generator/generate/{paragraph}/{phrases}'
+  defaults:
+    _controller: 'Drupal\text_generator\Controller\TextGeneratorController::generate'
+  requirements:
+    _permission: 'generate dummy text'
+
+text_generator.form:
+  path: 'admin/config/development/text_generator'
+  defaults:
+    _form: 'Drupal\text_generator\Form\TextGeneratorForm'
+    _title: 'Text Generator Config'
+  requirements:
+    _permission: 'administer site configuration'
