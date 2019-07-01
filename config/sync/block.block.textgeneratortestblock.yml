@@ -16,7 +16,7 @@ provider: null
 plugin: text_generator_test_block
 settings:
   id: text_generator_test_block
-  label: Location
+  label: Temperature
   provider: text_generator
   label_display: visible
   text_generator_test_block_settings: null

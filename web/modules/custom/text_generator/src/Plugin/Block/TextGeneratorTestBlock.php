@@ -21,23 +21,22 @@ class TextGeneratorTestBlock extends BlockBase {
   /**
    * {@inheritdoc}
    */
-  public function build() {
-    // Return the form @ Form/TextGeneratorTestBlockForm.php.
-    return \Drupal::formBuilder()->getForm('Drupal\text_generator\Form\TextGeneratorForm');
-   $form['page_title'] = [
-      '#type' => 'textfield',
-      '#title' => $this -> t('Ingrese el nombre del lugar ubicar'),
-    ];
+public function build() {
 
-    $form['submit'] = array(
-      '#type' => 'submit',
-      '#value' => $this->t('Ubicar'),
-    );
+$form['page_title'] = [
+'#type' => 'textfield',
+'#title' => $this -> t('Ingrese el nombre del lugar ubicar'),
+];
 
-    $form ['#attached']['library'][] = 'text_generator/text_generator';
+$form['submit'] = array(
+'#type' => 'submit',
+'#value' => $this->t('Ubicar'),
+);
 
-    return $form;
-  }
+$form['#attached']['library'][] = 'text_generator/text_generator';
+
+return $form;
+}
 
   /**
    * {@inheritdoc}
