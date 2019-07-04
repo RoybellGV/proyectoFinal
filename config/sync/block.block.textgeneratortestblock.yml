@@ -11,7 +11,7 @@ dependencies:
 id: textgeneratortestblock
 theme: bloggers
 region: header
-weight: 0
+weight: -3
 provider: null
 plugin: text_generator_test_block
 settings:

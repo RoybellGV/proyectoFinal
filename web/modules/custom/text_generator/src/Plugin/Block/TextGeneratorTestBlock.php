@@ -23,17 +23,20 @@ class TextGeneratorTestBlock extends BlockBase {
    */
 public function build() {
 
-$form['page_title'] = [
-'#type' => 'textfield',
-'#title' => $this -> t('Ingrese el nombre del lugar ubicar'),
-];
+//$form['page_title'] = [
+//'#type' => 'textfield',
+//'#title' => $this -> t('Ingrese el nombre del lugar ubicar'),
+//];
 
-$form['submit'] = array(
-'#type' => 'submit',
-'#value' => $this->t('Ubicar'),
-);
+//$form['submit'] = array(
+//'#type' => 'submit',
+//'#value' => $this->t('Ubicar'),
+//);
 
+$form = [];
+$form['page_title'] = ['#markup' => '<div class="js-var " ><img src="https://www.nestlebebe.es/sites/g/files/sxd771/f/styles/full_square/public/field/image/termo.png" width="60" height="60" alt="lo que sea">The temperature in Puntarenas is</div>',];
 $form['#attached']['library'][] = 'text_generator/text_generator';
+
 
 return $form;
 }

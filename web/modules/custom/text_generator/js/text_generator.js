@@ -57,6 +57,7 @@
         success: function (data) {
           //console.log("la longitud "+data.location.lat+"\nla latitud"+ data.location.long);
           swal("The temperature is " + data.current_observation.condition.temperature + " °F", "This is important to know", "success");
+          $('.js-var').once('text_generator').append('<h2>' + data.current_observation.condition.temperature + '</h2>');
           //window.alert("The temperature is " + data.current_observation.condition.temperature + " °F");
           //echo $return_data->location->lat;
 
